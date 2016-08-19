@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+
+  bakery:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - DEBUG=True
+    command: "python /app/bakery.py"

@@ -1,0 +1,2 @@
+https://github.com/pydanny/cookiecutter-django.git
+https://github.com/audreyr/cookiecutter-pypackage.git

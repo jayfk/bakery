@@ -1,0 +1,20 @@
+version: "2"
+
+volumes:
+  caddy: {}
+
+services:
+
+  bakery:
+    build: .
+    command: "gunicorn -w 4 -b 0.0.0.0:5000 bakery:app"
+
+  caddy:
+    build: docker/caddy
+    volumes:
+      - caddy:/root/.caddy
+    ports:
+      - "80:80"
+      - "443:443"
+    env_file:
+      - ".env"

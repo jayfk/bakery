@@ -1,0 +1,4 @@
+cookiecutter
+flask
+envparse
+gunicorn
