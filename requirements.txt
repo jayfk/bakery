@@ -1,4 +1,4 @@
 cookiecutter
 flask
-envparse
+envparse==0.2.0
 gunicorn
