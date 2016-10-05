@@ -1,4 +1,4 @@
-cookiecutter
+cookiecutter==1.4.0
 flask==0.11.1
 envparse==0.2.0
 gunicorn
